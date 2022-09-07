@@ -28,6 +28,7 @@ const LoginForm = ({ navigation }) => {
         style={styles.inputFiledsStyle}
         placeholder="Password"
         autoCapitalize="none"
+        secureTextEntry={true}
         autoCorrect={false}
         value={password}
         onChangeText={(newPassword) => setPassword(newPassword)}
