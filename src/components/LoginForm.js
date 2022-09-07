@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, TextInput, View, Button } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
+  Button,
+  TouchableOpacity,
+} from "react-native";
 
 const LoginForm = ({ navigation }) => {
   const [username, setUsername] = useState("");
@@ -29,9 +36,8 @@ const LoginForm = ({ navigation }) => {
         {message}
       </Text>
       <View style={styles.ButtonStyle}>
-        <Button
-          style={styles.viewButton}
-          title="Log In"
+        <TouchableOpacity
+          style={styles.StOpacityButton}
           onPress={() => {
             if (username === "admin" && password === "admin") {
               navigation.navigate("VGG Scan Product");
@@ -44,13 +50,29 @@ const LoginForm = ({ navigation }) => {
               setPassword("");
             }
           }}
-        />
+        >
+          <Text style={styles.StOpacityText}>LOG IN</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  StOpacityButton: {
+    height: 50,
+    width: 300,
+    marginHorizontal: 200,
+    backgroundColor: "#2da5ff",
+    borderRadius: 5,
+    marginTop: 50,
+    justifyContent: "center",
+  },
+  StOpacityText: {
+    fontSize: 18,
+    color: "white",
+    textAlign: "center",
+  },
   ButtonStyle: {
     flexDirection: "column",
     alignItems: "center",
