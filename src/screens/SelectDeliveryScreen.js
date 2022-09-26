@@ -8,11 +8,12 @@ import {
   TouchableOpacity,
   Button,
 } from "react-native";
-
+import UserLogo from "../components/UserLogo";
 const SelectDeliveryScreen = ({ navigation }) => {
   return (
     <>
       <View style={styles.viewStyle}>
+        <UserLogo />
         <Text style={styles.loginTextStyle}>
           Would you like to calculate the closest availabale deposit drop point?
         </Text>

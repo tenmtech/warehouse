@@ -9,6 +9,7 @@ import FoundProductScreen from "./src/screens/FoundProductScreen";
 import SelectDeliveryScreen from "./src/screens/SelectDeliveryScreen";
 import MapScreen from "./src/screens/MapScreen";
 import ManualInputDeliveryScreen from "./src/screens/ManualInputDeliveryScreen";
+
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Stack.Screen name="VGG Login" component={LoginScreen} />
         <Stack.Screen name="VGG Scan Product" component={ScanProductsScreen} />
         <Stack.Screen name="VGG Found Product" component={FoundProductScreen} />
+
         <Stack.Screen
           name="VGG Select Delivery"
           component={SelectDeliveryScreen}

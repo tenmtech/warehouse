@@ -8,11 +8,12 @@ import {
   TouchableOpacity,
   Button,
 } from "react-native";
-
+import UserLogo from "../components/UserLogo";
 const MapScreen = ({ navigation }) => {
   return (
     <>
       <View style={styles.viewStyle}>
+        <UserLogo />
         <Text style={styles.loginTextStyle}>Map Are</Text>
         <Text style={styles.productPlaceTextStyle}>
           You have reached your drop point. Would you like to place the product?

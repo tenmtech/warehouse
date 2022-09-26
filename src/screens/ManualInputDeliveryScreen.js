@@ -8,11 +8,13 @@ import {
   TouchableOpacity,
   Button,
 } from "react-native";
+import UserLogo from "../components/UserLogo";
 
 const ManualInputDeliveryScreen = ({ navigation }) => {
   return (
     <>
       <View style={styles.viewStyle}>
+        <UserLogo />
         <Text style={styles.loginTextStyle}>
           Please provide the dropoint specification dor delivery
         </Text>
