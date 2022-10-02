@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
   },
   TouchableStyle: {
     marginTop: 5,
+    marginLeft: 5,
     flexDirection: "row-reverse",
   },
 });

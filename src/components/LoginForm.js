@@ -62,11 +62,11 @@ const LoginForm = ({ navigation }) => {
 const styles = StyleSheet.create({
   StOpacityButton: {
     height: 50,
-    width: 300,
-    marginHorizontal: 200,
+    width: 430,
+    marginHorizontal: 300,
     backgroundColor: "#2da5ff",
     borderRadius: 5,
-    marginTop: 50,
+    marginTop: 100,
     justifyContent: "center",
   },
   StOpacityText: {
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
     color: "red",
   },
   viewButton: {
-    marginHorizontal: 200,
+    marginHorizontal: 300,
   },
 });
 
